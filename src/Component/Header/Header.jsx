@@ -12,7 +12,7 @@ const Header = () => {
     ]
     return (
         <nav className='w-full  flex items-center justify-between px-8 bg-indigo-600 h-16 text-white hover:text-gray-300 rounded'>
-            <h1 className='text-3xl'><Link to='/'>8Quiz</Link></h1>
+            <h1 className='text-3xl'><Link to='/'><span className='text-fuchsia-500'>8</span>Quiz</Link></h1>
             <div className=''>
                 <div onClick={() => setOpen(!open)} className='h-10 w-10 md:hidden'>
                     {open ? <XMarkIcon/> : <Bars3Icon/>}
