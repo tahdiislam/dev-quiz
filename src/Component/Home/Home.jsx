@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div>
           <h1 className='text-5xl font-bold my-7'>Start your Quiz</h1>
-          <div>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mx-3'>
             {
               quizOptions.map(quizOption => <QuizOption key={quizOption.id} quizOption={quizOption}/>)
             }
