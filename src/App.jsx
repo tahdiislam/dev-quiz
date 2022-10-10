@@ -1,10 +1,19 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
+import Home from './Component/Home/Home'
+import Main from './Component/Layout/Main'
+
+const router = createBrowserRouter([
+  {path: '/', element: <Main/>, children: [
+    {path: '/', element: <Home/>},
+    {path: '/home', element: <Home/>}
+  ]}
+])
 
 function App() {
   return (
     <div className="App">
-      <h1 className='text-blue-500'>Welcome to 8 Quiz</h1>
-      <button>hello</button>
+      <RouterProvider router={router}/>
     </div>
   )
 }
