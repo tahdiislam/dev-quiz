@@ -9,6 +9,7 @@ const PageNotFound = () => {
     return (
         <div>
             <h1 className="text-5xl font-bold text-red-500 my-8">404 | Page Not Found</h1>
+            <button onClick={handleGoHome} className='bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 py-4 px-8 rounded-lg text-white text-xl'>Back Home Page</button>
         </div>
     );
 };
