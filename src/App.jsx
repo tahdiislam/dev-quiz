@@ -5,7 +5,7 @@ import Home from './Component/Home/Home'
 import Main from './Component/Layout/Main'
 
 const router = createBrowserRouter([
-  {path: '/', element: <Main/>, children: [
+  {path: '/', element: <Main/>, loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),children: [
     {path: '/', element: <Home/>},
     {path: '/home', element: <Home/>},
     {path: '*', element: <PageNotFound/>}
