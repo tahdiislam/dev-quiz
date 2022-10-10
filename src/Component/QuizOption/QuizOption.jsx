@@ -5,7 +5,7 @@ const QuizOption = ({quizOption}) => {
     const {name, logo, total, id} = quizOption;
     const navigate = useNavigate()
     const handleStartQuiz = () => {
-        navigate(`/${name.toLowerCase()}/${id}`)
+        navigate(`/quiz/${name.toLowerCase()}/${id}`)
     }
     return (
         <div className='border border-dotted border-gray-500'>
