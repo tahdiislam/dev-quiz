@@ -17,7 +17,7 @@ const Statistics = () => {
     const quiz = quizData.data;
     return (
         <div>
-            <h1 className="text-4xl text font-semibold my-4 underline">Quiz Statistics</h1>
+            <h1 className="text-4xl text font-semibold my-4 underline text-indigo-600">Quiz Statistics</h1>
             <div style={{ width: "100%", height: 300 }}>
                 <ResponsiveContainer>
                     <AreaChart
