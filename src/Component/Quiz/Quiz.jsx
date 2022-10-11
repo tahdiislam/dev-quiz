@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import QuizOption from '../QuizSingleOption/QuizSingleOption';
 import toast, { Toaster } from 'react-hot-toast';
 
-const Quiz = ({quiz, setQuizAnswer, quizAnswer}) => {
+const Quiz = ({quiz, setAnswer}) => {
     const {options, question: initialQuestons, correctAnswer, id} = quiz;
     const questionModify01 = initialQuestons.split('<p>');
     const questionModify02 = questionModify01.join(' ');
@@ -22,7 +22,7 @@ const Quiz = ({quiz, setQuizAnswer, quizAnswer}) => {
               </div>
               <div className='flex flex-col items-start px-5 text-start'>
                 {
-                    options.map(option => <QuizOption option={option} id={id} key={id} setQuizAnswer={setQuizAnswer} quizAnswer={quizAnswer} correctAnswer={correctAnswer}/>)
+                    options.map(option => <QuizOption option={option} id={id} key={id} setAnswer={setAnswer} correctAnswer={correctAnswer}/>)
                 }
               </div>
         </div>

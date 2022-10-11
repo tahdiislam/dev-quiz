@@ -1,16 +1,20 @@
+import { useContext } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { quizContext } from '../QuizArea/QuizArea';
 
 // let toastText;
 
 
-const QuizOption = ({option, id, setQuizAnswer, quizAnswer, correctAnswer}) =>{
+const QuizOption = ({option, id, correctAnswer}) =>{
+    const {handleSetAnswer} = useContext(quizContext)
     const handleSelectQuiz = value => {            
-            setQuizAnswer(value)
             // console.log('hello world');
             if(value === correctAnswer){
                 notify('correct')
+                handleSetAnswer(id, 'correct')
             }else{
                 notify()
+                handleSetAnswer(id)
             }
     }
     const notify = value =>toast(`${ value === 'correct'  ? '👏you are done' : '❌  wrong answer'}`, {duration:700,/* icon: '', */id:`${id}`});
