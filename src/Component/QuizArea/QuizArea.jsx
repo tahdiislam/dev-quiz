@@ -8,7 +8,6 @@ const QuizArea = () => {
     const [answer, setAnswer] = useState([])
     const [correctAnswer, setCorrectAnswer] = useState(0);
     const [wrongAnswer, setWrongAnswer] = useState(0);
-    const [id, setId] = useState(1)
 
     // quiz select handler
     const handleSetAnswer = (id, value) => {
