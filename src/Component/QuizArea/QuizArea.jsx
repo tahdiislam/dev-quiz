@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 
 const QuizArea = () => {
-    const [quizAnswer, setQuizAnswer] = useState('')
+    const [quizAnswer, setQuizAnswer] = useState('');
     const quizData = useLoaderData()
     const allQuiz = quizData.data.questions
     console.log(allQuiz[0]);
