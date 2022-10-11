@@ -8,9 +8,9 @@ const Quiz = ({quiz}) => {
     const question = questionModify03.join(' ')
     console.log(question);
     return (
-        <div className='border'>
+        <div className='border my-3'>
               <h2 className='text-3xl font-medium'>{question}</h2>
-              <div >
+              <div className='flex flex-col items-start px-5 text-start'>
                 {
                     options.map(option => <QuizOption option={option} id={id} key={id}/>)
                 }
@@ -21,7 +21,7 @@ const Quiz = ({quiz}) => {
 
 const QuizOption = ({option, id}) =>{
     return(
-        <label className='text-2xl'><input className='h-6 w-6' type="radio" name={id} id={id} value={option}/>{option}</label>
+        <label className='text-2xl border rounded-xl py-2 px-3 my-1'><input className='h-6 w-6 mr-3' type="radio" name={id} id={id} value={option}/>{option}</label>
     )
 }
 

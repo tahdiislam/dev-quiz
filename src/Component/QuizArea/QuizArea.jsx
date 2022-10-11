@@ -9,7 +9,7 @@ const QuizArea = () => {
     return (
         <div>
             <h1 className='text-3xl font-semibold my-4'>Good Luck ✅</h1>
-            <div>
+            <div className='w-2/4 mx-auto my-6'>
                 {
                     allQuiz.map(quiz => <Quiz key={quiz.id} quiz={quiz}/>)
                 }
