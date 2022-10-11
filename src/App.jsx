@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import PageNotFound from './Component/404Page/404Page'
+import Blog from './Component/Blog/Blog'
 import Home from './Component/Home/Home'
 import Main from './Component/Layout/Main'
 import QuizArea from './Component/QuizArea/QuizArea'
@@ -12,7 +13,8 @@ const router = createBrowserRouter([
     {path: '/home', element: <Home/>},
     {path: '*', element: <PageNotFound/>},
     {path: '/home/quiz/:quizName/:quizId', element: <QuizArea/>, loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)},
-    {path: '/statistics', element: <Statistics/>}
+    {path: '/statistics', element: <Statistics/>},
+    
   ]}
 ])
 
