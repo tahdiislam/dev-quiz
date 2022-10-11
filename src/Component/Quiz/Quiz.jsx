@@ -1,7 +1,8 @@
+import { EyeIcon } from '@heroicons/react/24/solid';
 import React, { useState } from 'react';
 import QuizOption from '../QuizSingleOption/QuizSingleOption';
 
-const Quiz = ({quiz, setQuizAnswer}) => {
+const Quiz = ({quiz, setQuizAnswer, quizAnswer}) => {
     const {options, question: initialQuestons, correctAnswer, id} = quiz;
     const questionModify01 = initialQuestons.split('<p>');
     const questionModify02 = questionModify01.join(' ');
@@ -10,10 +11,13 @@ const Quiz = ({quiz, setQuizAnswer}) => {
     // console.log(question);
     return (
         <div className='border rounded-xl my-3 bg-indigo-100 shadow-md'>
-              <h2 className='text-3xl font-medium py-4'>{question}</h2>
+              <div className=''>
+                <h2 className='text-3xl font-medium py-4'>{question}</h2>
+                
+              </div>
               <div className='flex flex-col items-start px-5 text-start'>
                 {
-                    options.map(option => <QuizOption option={option} id={id} key={id} setQuizAnswer={setQuizAnswer}/>)
+                    options.map(option => <QuizOption option={option} id={id} key={id} setQuizAnswer={setQuizAnswer} quizAnswer={quizAnswer} correctAnswer={correctAnswer}/>)
                 }
               </div>
         </div>
