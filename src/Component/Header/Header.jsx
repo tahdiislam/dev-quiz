@@ -11,7 +11,7 @@ const Header = () => {
         {id: 3, name: 'Blog', path: '/blog'},
     ]
     return (
-        <nav className='md:sticky top-0 w-full  flex items-center justify-between px-8 bg-gradient-to-r from-green-500 via-blue-500 to-indigo-600 h-16 text-white hover:text-gray-300 rounded'>
+        <nav className='z-10 md:sticky top-0 w-full  flex items-center justify-between px-8 bg-gradient-to-r from-green-500 via-blue-500 to-indigo-600 h-16 text-white hover:text-gray-300 rounded'>
             <h1 className='text-3xl'><Link to='/'><span className='text-fuchsia-600'>dev</span>Quiz</Link></h1>
             <div className=''>
                 <div onClick={() => setOpen(!open)} className='h-10 w-10 md:hidden'>
