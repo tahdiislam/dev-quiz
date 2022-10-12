@@ -8,7 +8,7 @@ const QuizOption = ({quizOption}) => {
         navigate(`/home/quiz/${name.toLowerCase()}/${id}`)
     }
     return (
-        <div className='border bg-indigo-200 rounded-lg border-indigo-600 relative'>
+        <div className='bg-indigo-200 rounded-lg border-indigo-600 relative shadow-sm hover:shadow-lg shadow-indigo-600 hover:shadow-indigo-600'>
             <h2 className='absolute top-1 left-1 text-3xl font-medium text-indigo-600'>{name}</h2>
             <img src={logo} alt="quiz logo" />
             <div className='flex justify-between items-center m-2'>

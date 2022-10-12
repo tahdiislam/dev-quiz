@@ -8,7 +8,7 @@ const Blog = () => {
         {id: 3, question: "Explain the useRef hook.", ans: "Essentially, useRef is like a 'box' that can hold a mutable value in its .current property. You might be familiar with refs primarily as a way to access the DOM. If you pass a ref object to React with <div ref={myRef} /> , React will set its .current property to the corresponding DOM node whenever that node changes."}
     ];
     return (
-        <div className='mx-2'>
+        <div className='mx-2 pb-16 md:pb-0'>
           <h1 className="text-4xl font-semibold my-4 text-indigo-600">3 Questions you need to know..</h1> 
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
             {
