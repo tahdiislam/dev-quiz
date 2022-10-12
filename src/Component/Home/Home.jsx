@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
           <div className='flex mx-5'>
-            <h1 className='text-3xl font-semibold md:text-5xl md:font-bold text-indigo-600 mt-10 md:mt-20'>Start your Quiz</h1>
+            <h1 className='text-3xl font-semibold md:text-5xl md:font-bold text-indigo-600 mt-1 md:mt-20'>Start your Quiz</h1>
             <div className='w-2/5 z-0 md:w-2/5 md:-ml-16'>
               <Lottie animationData={quiz} loop={true}/>
             </div>
