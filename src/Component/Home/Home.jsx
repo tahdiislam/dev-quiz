@@ -16,7 +16,7 @@ const Home = () => {
               <Lottie animationData={quiz} loop={true}/>
             </div>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mx-8 md:mx-3 pb-20'>
+          <div className='z-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mx-8 md:mx-3 pb-20'>
             {
               quizOptions.map(quizOption => <QuizOption key={quizOption.id} quizOption={quizOption}/>)
             }

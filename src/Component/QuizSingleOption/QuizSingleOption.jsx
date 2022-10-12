@@ -35,7 +35,7 @@ const QuizOption = ({option, id, correctAnswer}) =>{
         <label className='text-2xl border rounded-xl py-2 px-3 my-1 hover:shadow-lg hover:bg-indigo-200'><input className='h-6 w-6 mr-3' type="radio" name={id} id={id} value={option} /* onClick={`${option !== correctAnswer}`} */ onChange={(e)=>handleSelectQuiz(e.target.value)}/>{option}<Toaster toastOptions={{
     className: '',
     style: {
-      border: '1px dotted gray',
+      border: '1px solid gray',
       padding: '10px 16px',
       color: 'black',
       boxShadow: 'none',

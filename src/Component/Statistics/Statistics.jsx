@@ -13,7 +13,7 @@ import {
 
 const Statistics = () => {
     const {quiz: quizData} = useContext(quizContext)
-    console.log(quizData.data);
+    // console.log(quizData.data);
     const quiz = quizData.data;
     return (
         <div>

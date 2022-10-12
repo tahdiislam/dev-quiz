@@ -16,13 +16,13 @@ const Quiz = ({quiz, setAnswer}) => {
               <div className='flex items-center justify-between mx-4'>
                 <h2 className='text-3xl font-medium py-4'>{question}</h2>
                 <div>
-                    <EyeIcon onClick={notify} className='h-8 w-8 text-indigo-600 cursor-pointer'/>
+                    <EyeIcon title='See correct answer' onClick={notify} className='h-8 w-8 text-indigo-600 cursor-pointer'/>
                     <Toaster/>
                 </div>
               </div>
               <div className='flex flex-col items-start px-5 text-start'>
                 {
-                    options.map(option => <QuizOption option={option} id={id} key={id} setAnswer={setAnswer} correctAnswer={correctAnswer}/>)
+                    options.map((option, index) => <QuizOption option={option} id={id} key={index} setAnswer={setAnswer} correctAnswer={correctAnswer}/>)
                 }
               </div>
         </div>
