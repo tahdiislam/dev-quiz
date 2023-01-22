@@ -12,7 +12,7 @@ See the Live Preview: [devQuiz](https://devquiz-01.netlify.app/)
 <li>You can participate in all type of quiz.</li>
 </ul>
 
-### How to start ?
+### How to start  ?
 <ol>
 <li>First choose you're quiz topic.</li>
 <li>Second click on start button.</li>
