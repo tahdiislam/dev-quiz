@@ -18,6 +18,6 @@ See the Live Preview: [devQuiz](https://devquiz-01.netlify.app/)
 <li>Second click on start button.</li>
 <li>👏You're done</li>
 <li>🎈Thank You!!</li>
-</ol>
+</ol> 
 
 ## This is so easy !! 😍
