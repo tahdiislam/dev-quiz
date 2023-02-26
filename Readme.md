@@ -20,4 +20,4 @@ See the Live Preview: [devQuiz](https://devquiz-01.netlify.app/)
 <li>🎈Thank You!!</li> 
 </ol> 
 
-## This is so easy !! 😍
+## This is so easy !! 😍 
