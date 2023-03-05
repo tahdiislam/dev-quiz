@@ -1,6 +1,6 @@
 devQuiz
 ========
-See the Live Preview: [devQuiz](https://devquiz-01.netlify.app/)
+See the Live Preview: [devQuiz](https://devquiz-01.netlify.app/) 
 ------------------
 
 ### Some feature of devQuiz
