@@ -15,7 +15,7 @@ See the Live Preview: [devQuiz](https://devquiz-01.netlify.app/)
 ### How to start  ?
 <ol>
 <li>First choose you're quiz topic.</li>
-<li>Second click on start button.</li>
+<li>Second click on start button.</li> 
 <li>👏You're done</li>
 <li>🎈Thank You!!</li>  
 </ol> 
